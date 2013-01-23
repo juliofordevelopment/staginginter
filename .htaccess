@@ -1,4 +1,6 @@
-redirect 301 "/trial-free-45-day-hosted-collaboration.html" /trial-free-45-day-hosted-collaboration
+redirect 301 "/trial-free-45-day-hosted-collaboration.html" /trial-free-45-day-hosted
+redirect 301 "/trial-free-45-day-hosted-collaboration" /trial-free-45-day-hosted
+redirect 301 "/trial-free-45-day-collaboration-vm" /trial-demo
 redirect 301 "/solutions/business/advertising-marketing"  /solutions/solutions-overview
 redirect 301 "/solutions/business/aec"  /solutions/solutions-overview
 redirect 301 "/solutions/business/consumer-retail" /solutions/solutions-overview
