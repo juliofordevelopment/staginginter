@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_uninstall().
+ */
+function livehelpnow_uninstall() {
+  variable_del('livehelpnow_clientid');
+  variable_del('livehelpnow_buttonid');
+}

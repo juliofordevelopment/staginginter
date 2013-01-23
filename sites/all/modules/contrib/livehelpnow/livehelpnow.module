@@ -1,0 +1,85 @@
+<?php
+function livehelpnow_help($path, $arg) {
+  $content = '';
+  switch ($path) {
+    case 'admin/help#livehelpnow':
+      $content .= "<img src='http://www.livehelpnow.net/images/logo_livehelpnow.gif' border='0' style='float:none' /><br /><a href='http://www.livehelpnow.net/cp/account/signup.aspx' target='_new' style='font-size:16px;'><b>Get LiveHelpNow account</b></a><br /><a href='http://www.livehelpnow.net/products/live_chat_system/buttons/' target='_blank' style='font-size:14px;'>See available Live chat buttons</a>";
+	  return t($content);
+      break;
+  }
+}
+
+function livehelpnow_menu() {
+  $items = array();
+  $items['admin/config/user-interface/livehelpnow'] = array(
+    'title' => 'LiveHelpNow Help Desk',
+    'description' => 'LiveHelpNow Help Desk',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('livehelpnow_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+function livehelpnow_form($form, &$form_state) {
+  $form['livehelpnow_clientid'] = array(
+    '#type' => 'textfield',
+    '#title' => t('LiveHelpNow Account #'),
+    '#default_value' => variable_get('livehelpnow_clientid', ''),
+    '#size' => 30,
+    '#maxlength' => 255,
+    '#description' => t('Please click on <a href="http://www.livehelpnow.net/cp/account/signup.aspx" target="_new">[Get LiveHelpNow Account]</a> link located in the module description on the left if you do not have LiveHelpNow account'),
+    '#required' => TRUE,
+  );
+  $form['livehelpnow_buttonid'] = array(
+    '#type' => 'textfield',
+    '#title' => t('LiveHelpNow Button #'),
+    '#default_value' => variable_get('livehelpnow_buttonid', '40'),
+    '#size' => 30,
+    '#maxlength' => 255,
+    '#description' => t('Please click on <a href="http://www.livehelpnow.net/products/live_chat_system/buttons/" target="_blank">[See available live chat buttons]</a> link located in the module description on the left to choose Button #'),
+    '#required' => FALSE,
+  );
+  return system_settings_form($form);
+}
+
+function livehelpnow_form_validate($form, &$form_state){
+  $link_text = $form_state['values']['livehelpnow_clientid'];
+  if (!trim($link_text)){
+    form_set_error('livehelpnow_clientid', t('LiveHelpNow Account # may not be blank.'));
+  }
+}
+
+function livehelpnow_block_info() {
+  $blocks['livehelpnow']['info'] = t('LiveHelpNow Help Desk');
+  return $blocks;
+}
+
+function livehelpnow_block_view($delta = '') {
+  
+  $content = '';
+  switch ($delta) {
+    case 'livehelpnow':
+      $block['subject'] = t('LiveHelpNow Help Desk');
+	  
+	  $buttonid = variable_get('livehelpnow_buttonid', '');
+	  
+	  $clientid = variable_get('livehelpnow_clientid', '');
+	  $clientid = str_replace("lhn","",strtolower($clientid));
+	  
+      $content = '
+		<!--start http://www.livehelpnow.net  --> <div style="text-align: center;white-space: nowrap;">
+		<div>   
+		<script type="text/javascript">
+		var lhnJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src=\'" + lhnJsHost + "www.livehelpnow.net/lhn/scripts/lhnvisitor.aspx?div=&amp;zimg='.$buttonid.'&amp;lhnid='.$clientid.'&amp;iv=1&amp;zzwindow=0&amp;d=0&amp;custom1=&amp;custom2=&amp;custom3=\' type=\'text/javascript\'%3E%3C/script%3E"));</script>
+		</div>
+		<div><a title="Help Desk Software" href="http://www.LiveHelpNow.net/" style="font-size:10px;" target="_blank">Help Desk Software</a></div> </div> <!--end http://www.livehelpnow.net  -->
+		';
+
+      break;
+  }
+  $block['content'] = t($content);
+  return $block;
+}
+?>

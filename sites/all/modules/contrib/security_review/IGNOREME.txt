@@ -1,0 +1,20 @@
+You should read the README.txt but can ignore this file. It is used as part of
+the test to see if files are writable on your site. If you see timestamps below 
+this line those are security runs which were able to write to this file.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+20111209115430
+20111209115847
+20120816015219
+20120816020107
+20120816021505
+20120816022420
+20120816061016
+20120821033604
+20120821033735
+20120821033738
+20120821033954
+20120821034814
+20120821034814
+20120821034841
+20120821034852

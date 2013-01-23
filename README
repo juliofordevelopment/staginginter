@@ -1,0 +1,11 @@
+This is your new git repository.
+
+put all your files and folders here.
+
+Remember the basic workflow for git is:
+
+git pull (to get other people's changes)
+edit "file(s)"
+git add "file(s)"
+git commit (don't forget a good commit message)
+git push (to share with others)

@@ -1,0 +1,106 @@
+<?php
+
+include_once 'debugmode.php';
+
+
+//function accellion_functions_uc_order_actions($order) {
+function accellion_functions_commerce_order_actions($order) {
+//	drupal_set_message("accellion_functions_uc_order_actions accessed", 'warning');
+	$actions = array();
+	if ($order->order_status != 'provisioned') {
+		$actions[] = array(
+			'name' => 'Provision',
+			'url' => 'admin/store/orders/' . $order->order_id . '/provision',
+			'icon' => '<span>Provision</span>',
+			'title' => 'Provision'
+		);
+	}
+	return $actions;
+}
+
+//function accellion_functions_uc_checkout_complete($order, $account) {
+function accellion_functions_commerce_checkout_complete($order) {
+	drupal_set_message("accellion_functions_commerce_checkout_complete accessed", 'warning');
+//	echo "<pre>";var_dump($order);die;
+  _accellion_functions_provision_order($order);
+  //var_dump($order);die;
+	return;		// Tax calculation below is not put anywhere
+}
+
+function accellion_functions_provision_order($order) {
+	drupal_set_message("accellion_functions_provision_order accessed", 'warning');
+	_accellion_functions_provision_order($order, true);
+	drupal_goto('admin/store/orders');
+}
+
+function _accellion_functions_provision_order($order, $verbose = false) {
+	drupal_set_message("_accellion_functions_provision_order accessed", 'warning');
+echo "<pre>";var_dump($order);
+die;
+	$data = array('data' => serialize($order));
+	$ch = curl_init();
+//	curl_setopt($ch, CURLOPT_URL, 'https://proserv.accellion.net/pdns/step2.php');
+//	curl_setopt($ch, CURLOPT_URL, 'https://proserv.accellion.net/pdns-new/process_cart_order/process_cart_order.php');
+	curl_setopt($ch, CURLOPT_URL, 'https://proserv-stage.accellion.net/pdns-new/process_cart_order/process_cart_order.php');
+	global $provision_server;
+//		drupal_set_message("Provisioning server is: $provision_server", 'warning');
+//	curl_setopt($ch, CURLOPT_URL, $provision_server);	//Get from debugmode.php
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	$response = curl_exec($ch);
+	$info = curl_getinfo($ch);
+	if ($response === false || $info['http_code'] != 200) {
+		watchdog('provisioning', 'Order provisioning failed for order id '.$order->order_id, array(), WATCHDOG_ERROR);
+		if ($verbose) {
+			drupal_set_message('Order provisioning failed', 'error');
+		}
+	} else {
+		if (uc_order_update_status($order->order_id, 'provisioned')) {
+			watchdog('provisioning', 'Order provisioning succeeded for order id '.$order->order_id, array(), WATCHDOG_NOTICE);
+			if ($verbose) {
+				drupal_set_message('Order provisioned');
+			}
+		} else {
+			watchdog('provisioning', 'Order provisioning failed for order id '.$order->order_id, array(), WATCHDOG_ERROR);
+			if ($verbose) {
+				drupal_set_message('Order provisioning failed', 'error');
+			}
+		}
+	}
+	curl_close($ch);
+//	echo "<pre>";var_dump($response);var_dump($info);
+//	die;
+}
+
+//-----------------------------------------------------------------------
+//function writelog($log_entry, $log_file)
+//-----------------------------------------------------------------------
+function writelog($log_entry, $log_file){
+
+     $filehandle = fopen($log_file, "a"); //open the file for append
+     fwrite($filehandle, $log_entry."\n");
+     fclose($filehandle);
+}
+
+function globalvars(){
+    $result=array();
+    $skip=array('GLOBALS','_ENV','HTTP_ENV_VARS',
+                        '_POST','HTTP_POST_VARS','_GET',
+                        'HTTP_GET_VARS',
+                        '_COOKIE',
+                        'HTTP_COOKIE_VARS','_SERVER',
+                        'HTTP_SERVER_VARS',
+                        '_FILES','HTTP_POST_FILES',
+                        '_REQUEST','HTTP_SESSION_VARS',
+                        '_SESSION');
+    $skip=array('GLOBALS','_SERVER','default_appid_secret','license_url','dbconnstring_powerdns','dbconnstring_provision','appid_url');
+    $skip=array('GLOBALS','_SERVER');
+    foreach($GLOBALS as $k=>$v)
+        if(!in_array($k,$skip))
+            $result[$k]=$v;
+    return $result;
+}//functionglobalvars
+
+

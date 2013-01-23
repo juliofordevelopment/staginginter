@@ -1,0 +1,6 @@
+name = LiveHelpNow
+description = LiveHelpNow Help Desk.
+core = 7.x
+package = "LiveHelpNow Help Desk"
+version = VERSION
+configure = admin/config/user-interface/livehelpnow

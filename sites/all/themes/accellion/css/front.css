@@ -1,0 +1,23 @@
+/**
+ * @file
+ * front styling
+ */
+
+
+
+/**
+ * Page wrapper front page
+ */
+#page-wrapper-front{
+  background: none repeat scroll 0 0 transparent;
+  width:940px;
+  margin:0 auto;
+  clear:both;
+/**
+box-shadow: 0px 0px 8px #bababa; 
+-webkit-box-shadow: 0px 0px 8px #bababa;
+-moz-box-shadow: 0px 0px 8px #bababa; 
+filter: progid:DXImageTransform.Microsoft.dropShadow(color=#bababa, offX=-7, offY=-7, positive=true);
+*/
+}
+

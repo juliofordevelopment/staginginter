@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+
+#acchead {
+	/*height: 30px;*/
+}
+
+#Accellion_Header {
+ height: 75px;
+ color: rgb(255, 255, 255); height: 75px;
+ background: url("/sites/all/themes/accellion/images/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);
+
+}
+
+#free-trial {
+	margin-left:600px;
+	width:100px;
+	height:20px;
+	margin-top:-20px; 
+  position: absolute;
+}
+	 
+a.free-trial {
+display: block;
+width: 106px;
+height: 29px;
+overflow: hidden;
+text-indent: -15000px;
+font-size: 0px;
+line-height: 0px;
+background: url(/sites/all/themes/accellion/images/btn/btn-free-trial.png) no-repeat 100% 100%;
+}
+	 
+/*
+a:hover.free-trial {
+    background-position: 0 -29px;
+}
+ 
+a:active.free-trial {
+    background-position: 0 -106px;
+}
+*/
+sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/themes/accellion/css/structure.css
+
+/*
+#topright {
+    color: #FFFFFF;
+    float: right;
+    font-size: 0.85em;
+    padding-top: 18px;
+    text-align: right;
+    width: 680px;
+}
+*/
+
+#search {
+  padding-right: 9px;
+  margin-top: 8px;
+}
+.search-box {
+    display: block;
+    float: right;
+    margin-bottom: 22px;
+}
+.search-box .form-text {
+    background: url("/sites/all/themes/accellion/images/searchbox.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    font-size: 1em;
+    height: 14px;
+    width: 130px;
+    margin-right: 50px;
+}
+.search-image {
+    background: url("/sites/all/themes/accellion/images/go.gif") repeat scroll 0 0 transparent;
+    margin-left: 5px;
+    position: relative;
+    top: -18px;
+}
+
+#block-nice-menus-1 .content {
+	width:940px;
+	margin:auto;
+}
+
+#block-search-form .content {
+	width:940px;
+	margin:auto;
+}
+
+#block-block-42 .content {
+	width:940px;
+	margin:auto;
+}
+
+#block-block-48--2 .content {
+	width:940px;
+	margin:auto;
+	z-index:980;
+}
+
+#top-right {
+    color: #FFF;
+    font-size: 11px;
+    margin-left: 750px;
+    margin-top: -50px; 
+    text-align: right;
+    width: 150px;
+    z-index: 101;
+    float: left;
+    position: absolute;
+    height: 10px;
+}
+
+#top-links {
+    padding-right: 0px;
+padding-bottom: 10px;
+margin-right: -7px;
+    width: 350px;
+    float: right;
+}
+#top-links a:link, #top-links a:visited, #top-links a:active {
+    color: #ffffff;
+    padding: 0 7px;
+}
+#top-links a:hover {
+    color: #FB1;
+    text-decoration: none;
+}
+
+#footer .block .content ul li a:hover{ text-decoration: none;}
+
+###### sidebar
+#sidebar-next-step {
+}
+
+#sidebar #sidebar-next-step {
+  background: none repeat scroll 0 0 #F6F6F6;
+    border: 0 solid red;
+    margin-left: -7px;
+    margin-top: -15px;
+    padding: 5px;
+    width: 194px;
+}
+
+#sidebar #sidebar-next-step ul{
+  margin-top: -12pt;
+}
+
+#sidebar #sidebar-next-step ul li{
+  border: 0px solid red;
+  height: 28px;
+}
+
+#sidebar #sidebar-next-step h3{
+  font-family: Arial,Tahoma,Verdana;
+  font-size:16px;
+  font-weight:bold;
+padding-bottom: 5px;
+}
+
+#sidebar-next-step ul li a {
+  padding: 10px 0 10px 32px;
+  color: #777;
+  font-weight: bold;
+}
+#sidebar-signup-li{
+  background:url('/sites/default/files/get-started/get-started-gs.png') no-repeat left transparent;
+}
+#sidebar-signup-li:hover{
+  background:url('/sites/default/files/get-started/get-started-gs-h.png') no-repeat left transparent;
+    text-decoration: none;
+}
+
+#sidebar-moreinfo-li{
+  background:url('/sites/default/files/get-started/get-started-cu.png') no-repeat left transparent; 
+}
+#sidebar-moreinfo-li:hover{
+  background:url('/sites/default/files/get-started/get-started-cu-h.png') no-repeat left transparent;
+    text-decoration: none;
+}
+#sidebar-demo-li{
+  background:url('/sites/default/files/get-started/get-started-wd.png') no-repeat left transparent; 
+}
+#sidebar-demo-li:hover{
+  background:url('/sites/default/files/get-started/get-started-wd-h.png') no-repeat left transparent; 
+    text-decoration: none;
+}
+#sidebar-callus-li{
+  background:url('/sites/default/files/get-started/get-started-ca.png') no-repeat left transparent;
+color: #777777;
+font-weight: bold;
+padding: 0px 0px 0px 32px;
+}
+#sidebar-callus-li:hover{
+ background:url('/sites/default/files/get-started/get-started-ca-h.png') no-repeat left transparent; 
+    text-decoration: none;
+}
+
+#######  subpage footer banner
+#subp-banner-left {
+}
+#banner-SBS #subp-banner-left {
+  border: 0px solid #ccc;
+  text-align:left;
+  background:#FFF;
+  color:#000000;
+  font-size:11px;
+line-height: 13px;
+  font-weight:normal;
+  height:140px !important;
+  margin-top: -20px;
+}
+
+#banner-SBS a {
+  color:#000000;
+font-size: 11px;
+}
+
+#subp-banner-left table{
+  height: 100%;
+  margin-top: 0px;
+}
+
+#subp-banner-left td {
+  border-right: 2px solid #FFF;
+  background: #DDD;
+  padding: 5pt 10pt 5pt 5pt;
+  vertical-align: top;
+  overfloat: scroll;
+}
+
+#subp-banner-left h2{
+  border-bottom: thin dashed #999;
+  background: none;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #000;
+}
+
+div.subp-banner {
+  overflow: scroll;
+}
+
+div.view-news-tab {
+  overflow: hidden;
+  height: 80px;
+}
+
+/*
+  Sidebar Featured Resource Block/View
+*/
+
+#sidebar .block h2{
+  margin: 15px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: bold;
+line-height: 3px;
+}
+
+#sidebar p.media-contact {
+  font-size: 11px;
+}
+
+#sidebar .item-list-media-contact {
+  padding-left: 15px;
+}
+
+#sidebar .block .content .view-content ul {
+  list-style: disc outside none;
+  padding-left: 15px ;
+  font-size: 11px;
+  color: #000;
+}
+
+.view-featured-resources-row{
+  padding-left: 15px;
+}
+.view-featured-resources-row.views-row-6,
+.view-featured-resources-row.views-row-7,
+.view-featured-resources-row.views-row-8,
+.view-featured-resources-row.views-row-9,
+.view-featured-resources-row.views-row-10,
+.view-featured-resources-row.views-row-11,
+.view-featured-resources-row.views-row-12,
+.view-featured-resources-row.views-row-13,
+.view-featured-resources-row.views-row-14,
+.view-featured-resources-row.views-row-15,
+.view-featured-resources-row.views-row-16,
+.view-featured-resources-row.views-row-17,
+.view-featured-resources-row.views-row-18,
+.view-featured-resources-row.views-row-19,
+.view-featured-resources-row.views-row-20,
+.view-featured-resources-row.views-row-21,
+.view-featured-resources-row.views-row-22,
+.view-featured-resources-row.views-row-23,
+.view-featured-resources-row.views-row-24,
+.view-featured-resources-row.views-row-25,
+.view-featured-resources-row.views-row-26,
+.view-featured-resources-row.views-row-27,
+.view-featured-resources-row.views-row-28,
+.view-featured-resources-row.views-row-29,
+.view-featured-resources-row.views-row-30
+{
+  display: none;
+}
+.view-display-id-block_featured_resources .view-content a,
+.view-featured-resources-row a{
+  color: #000;
+}
+.view-display-id-block_featured_resources .view-content h3{
+  font-size: 12px;
+  margin: 10px 0 0px 0;
+  color: #3a536e;
+}
+
+
+.menu-block-wrapper {
+background: url("../images/shadow.png") no-repeat scroll center bottom transparent;
+    border: medium none;
+height: 10px;
+    list-style: none outside none;
+    text-align: left;
+background: #ffffff;
+margin-top: -4px;
+padding: 0px;
+font-size: 11px;
+}
+
+.menu-block-wrapper ul {
+background: none repeat scroll 0 0 #ffffff;
+    border: medium none;
+    list-style: none outside none;
+    text-align: left;
+margin-top: 37px;
+padding: 3px 10px 3px 20px;
+font-size: 12px;
+font-weight: bold;
+}
+
+.menu-block-wrapper li {
+    border: medium none;
+    list-style: none outside none;
+    text-align: left;
+
+display: inline;
+padding-right: 20px;
+
+}
+
+.menu-block-wrapper a {
+    text-align: left;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 7px;
+color: #666666;
+text-decoration: none;
+
+}
+
+.menu-block-wrapper a:hover {
+    text-align: left;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 7px;
+color: #3a536e;
+text-decoration: none;
+ background: url("/sites/default/files/Accellion-subnav-hover.png") no-repeat scroll center 13px transparent;
+}
+
+.menu-block-wrapper a.active {
+    text-align: left;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 7px;
+color: #000000;
+text-decoration: none;
+ background: url("/sites/default/files/Accellion-subnav-active.png") no-repeat scroll center 13px transparent;
+}
+
+
+#li.menu-mlid-1704 {
+    display: inline;
+}
+
+
+#top-links {
+	width:400px;
+}
+
+#top-right {
+    margin-left: 520px;
+}
+
+#Accellion_Header {
+ height: 80px;
+ color: rgb(255, 255, 255);
+ background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);
+
+}
+
+ul#views-ticker-fade-news_ticker
+{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+#block-views-news-ticker-block h2 {
+  width:15%;
+  float:left;
+}
+
+#Accellion_Header {
+  z-index:498;
+  position:relative;
+}

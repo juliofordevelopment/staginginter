@@ -1,0 +1,15 @@
+; $Id: rotating_banner.info,v 1.1 2010/04/08 12:20:13 JacobSingh Exp $
+name = Rotating Banner
+description = Rotating banners 
+package = Media
+dependencies[] = media
+core = 7.x
+files[] = rotating_banner.module
+files[] = rotating_banner.install
+
+; Information added by drupal.org packaging script on 2010-05-06
+version = "7.x-1.0-alpha4"
+core = "7.x"
+project = "rotating_banner"
+datestamp = "1273131907"
+
