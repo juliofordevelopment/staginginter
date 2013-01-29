@@ -1,0 +1,3 @@
+.view-content tr.even, .view-content tr.odd {
+  border-bottom:none;
+}
