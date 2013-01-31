@@ -1,9 +1,9 @@
-sites/default/settings.php
-sites/default/files/
 blog
 blog/
 online.html
 .DS_Store
-sites/0123131430prod/
 .htaccess
-sites/0123131430prodcopy/
+sites/*
+!sites/all
+!sites/all/*
+!sites/all/**/*
