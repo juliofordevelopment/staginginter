@@ -10,3 +10,4 @@ sites/*
 !sites/default
 sites/default/settings.php
 sites/default/files
+sites/all/modules/.DS_Store
