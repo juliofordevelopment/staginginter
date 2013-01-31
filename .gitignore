@@ -7,3 +7,6 @@ sites/*
 !sites/all
 !sites/all/*
 !sites/all/**/*
+!sites/default
+sites/default/settings.php
+sites/default/files
