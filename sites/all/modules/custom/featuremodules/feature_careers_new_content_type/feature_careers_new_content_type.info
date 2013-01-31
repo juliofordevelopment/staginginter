@@ -1,0 +1,13 @@
+name = feature careers new content type
+description = Content Type for Careers New
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = node-carrers_new-field_new_career_desc
+features[field][] = node-carrers_new-field_new_career_exp
+features[field][] = node-carrers_new-field_new_career_job_title
+features[field][] = node-carrers_new-field_page_title
+features[field][] = node-carrers_new-field_to_apply
+features[node][] = carrers_new

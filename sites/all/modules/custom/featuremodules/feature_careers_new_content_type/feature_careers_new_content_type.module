@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature careers new content type feature.
+ */
+
+include_once 'feature_careers_new_content_type.features.inc';

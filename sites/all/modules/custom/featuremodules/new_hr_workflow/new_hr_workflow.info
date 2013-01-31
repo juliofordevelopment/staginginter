@@ -1,0 +1,15 @@
+name = New HR WorkFlow
+description = New HR WorkFlow
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = new_hr_workflow
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = rules
+dependencies[] = workflow
+dependencies[] = workflow_rules
+features[features_api][] = api:1
+features[rules_config][] = rules_new_hr_publish
+features[rules_config][] = rules_send_a_notification_email
+features[workflow][] = New HR Workflow
