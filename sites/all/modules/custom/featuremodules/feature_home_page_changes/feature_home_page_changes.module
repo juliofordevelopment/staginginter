@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Feature Home Page Changes feature.
+ */
+
+include_once 'feature_home_page_changes.features.inc';

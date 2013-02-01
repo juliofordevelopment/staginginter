@@ -1,0 +1,14 @@
+name = Feature Home Page Changes
+description = Feature Home Page Changes
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_home_page_changes
+dependencies[] = views
+dependencies[] = views_ticker
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = events
+features[views_view][] = featured_resources_homepage
+features[views_view][] = news_ticker
+features_exclude[dependencies][ctools] = ctools
