@@ -381,6 +381,39 @@ a.headerlink {
   text-decoration: none
 }
 
+a.no-blue {
+color:#363636;	
+}
+
+a.no-blue:hover {
+color:#649cd2;
+}
+
+#block-aggregator-feed-1 a {
+color:#363636;	
+}
+
+#block-aggregator-feed-1 a:hover {
+color:#649cd2;
+}
+
+a.no-blue-title {
+color:#333333;	
+}
+
+a.no-blue-title:hover {
+color:#649cd2;
+}
+
+a.footer-no-blue {
+color:#5C5D5E;	
+}
+
+a.footer-no-blue:hover {
+color:#649cd2;
+}
+
+
 headerlink:hover {
    text-decoration: none; 
    color:#649cd2;
@@ -661,11 +694,26 @@ font-weight: bold;
 }
 
 /* New stuff */
-#upperTriptych, #diptych, #lowerTriptych {
+#upperTriptych {
 	width: 940px;
 	margin:20px auto;
 	overflow:auto;
 }
+
+#diptych {
+	width: 940px;
+	margin:20px auto;
+	margin-bottom:0px;
+	overflow:auto;
+}
+
+#lowerTriptych {
+	width: 940px;
+	margin:20px auto;
+	margin-top:5px;
+	overflow:auto;
+}
+
 
 /* Upper Triptych */
 #upperTriptych h2 {
@@ -754,18 +802,19 @@ font-weight: bold;
 	width:299px;
 	/*box-sizing:border-box;*/
 	float:left;
+
 }
 #lowerTriptych h2 {
   border-bottom:1px dotted #ccc;
   padding-bottom:5px;
   /*padding-left:60px;*/
-  height:40px;
-  line-height:40px;
+  height:25px;
+  line-height:30px;
   font-size:16px;
 }
 .region-lower-triptych-first, .region-lower-triptych-second, .region-lower-triptych-third  {
   /*height:280px;*/
-  height:260px;
+  height:250px;
 }
 .region-lower-triptych-first, .region-lower-triptych-second  {
   /*border-right:1px solid #ccc;*/
