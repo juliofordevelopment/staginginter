@@ -129,6 +129,7 @@ body.not-front h1#page-title{
 #footer .block .content ul li{
   background:url('../images/double-line-ft.gif') repeat-x center bottom transparent;
   padding:7px 0;
+  /*padding:3px 0;*/
   list-style:none outside none;
 }
 
@@ -378,6 +379,11 @@ img.image-space-left{
 /**
  * Slider
  */
+
+#sliderspace {
+	height:20px;
+}
+
 #slider {
     position:relative;
     background:url(../images/loading.gif) no-repeat 50% 50%;

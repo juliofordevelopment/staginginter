@@ -8,7 +8,9 @@
   /* margin-right: 230px; */
   display: inline-block;
   height: 58px;
-  top: -4px;
+  /*top: -4px;*/
+  top:3px;
+  left:30px;
   font-size: 15px;
 } 
 #site-topnav a		{ 
@@ -156,8 +158,9 @@ ul.dropdown li.menu-no-hover:hover{background-image: none;}
 
 #menu-free-trial{ 
   color: #1B415C; 
-  font-weight: bold; 
+  font-weight: bold;
   background: url('/sites/all/themes/accellion/images/trial-button.png') no-repeat 100% 50%;
+
 }
 #menu-free-trial:hover{ 
   color: white;

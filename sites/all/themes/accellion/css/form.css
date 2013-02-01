@@ -155,24 +155,26 @@ form#contact-form .form-submit:hover{
 form#search-block-form{
   float:right;
   overflow:hidden;
-  margin:-70px 15px 10px 0px;
+  margin:-70px 5px 10px 0px;
 }
 
 form#search-block-form .form-text {
     background: none repeat scroll 0 0 #FFFFFF;
     border: medium none;
-    border-radius: 16px 0 0 16px;
+    /*border-radius: 16px 0 0 16px;*/
+    border-radius: 5px 0 0 5px;
     float: left;
     height: 16px;
     padding: 2px 10px;
-    width: 150px;
+    width: 100px;
     margin-right:0;
 }
 
 form#search-block-form .form-submit {
     background:url(../images/enhancements/search-icon.png) no-repeat center center #FFFFFF;
     border: medium none;
-    border-radius: 0 16px 16px 0;
+    /*border-radius: 0 16px 16px 0;*/
+    border-radius: 0 5px 5px 0;
     float: left;
     height: 20px;
     margin: 0;

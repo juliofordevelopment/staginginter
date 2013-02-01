@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+#accellionLogo {
+	position:relative;
+	right:20px;
+	top:0px;
+}
+
 #acchead {
 	/*height: 30px;*/
 }
@@ -113,11 +119,14 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
 }
 
 #top-links {
-    padding-right: 0px;
+/*    padding-right: 0px;
 padding-bottom: 10px;
-margin-right: -7px;
+margin-right: -7px;*/
     width: 350px;
     float: right;
+  position:relative;
+  left:85px;
+  top:2px;
 }
 #top-links a:link, #top-links a:visited, #top-links a:active {
     color: #ffffff;
@@ -394,6 +403,7 @@ text-decoration: none;
 
 #Accellion_Header {
  height: 80px;
+ /*margin-bottom:20px;*/
  color: rgb(255, 255, 255);
  background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);
 
