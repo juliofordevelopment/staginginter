@@ -1,7 +1,7 @@
 (function ($) {
 
 	$.fn.newsTickerFade = function (b) {
-		b = b || 4000;
+		b = b || 8000;
 		initTicker = function (a) {
 			stopTicker(a);
 			a.items = $("li", a);
