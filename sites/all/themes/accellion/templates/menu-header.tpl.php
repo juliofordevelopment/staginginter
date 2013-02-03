@@ -65,7 +65,7 @@
 
 <div id='top-right'>
 <div id="top-links">
-<a href='/blog' target="_blank">Blog</a> | <a href='/support'>Support</a> | <a href='/contact-us'>Contact Us</a> | <a id='site-sales-number'>Sales: (855) 485-4300</a>
+<a href='/blog' target="_blank">Blog</a> | <a href='/support'>Support</a> | <a href='/contact-us'>Contact Us</a> | <a href="javascript:void(0);" onclick="olark('api.box.expand')">Chat </a> | <a id='site-sales-number'>Sales: (855) 485-4300</a>
 </div>
 
 </div>
