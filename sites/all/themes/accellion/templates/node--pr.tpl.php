@@ -16,6 +16,20 @@
     <h1 id="prPageTitle"><?php print render($content['field_page_title']);?></h1>
     <h2 id="prTitle"><?php print render($content['field_h1title']);?></h2>
     <h3 id="prSubTitle"><?php print render($content['field_subtitle_learn_more']);?></h3>
+
+	<!-- ShareThis -->      
+	<?php
+	  // Only display the wrapper div if there are links.
+	  $links = render($content['links']);
+	  if ($links):
+	?>
+	  <div class="link-wrapper">
+	    <?php print $links; ?>
+	  </div>
+	<?php endif; ?>
+	<div style="height:30px;">&nbsp;</div>
+	<!-- ShareThis -->
+
     <span class="prDateline"><strong><?php print render($content['field_release_location']);?> &ndash; <?php print render($content['field_release_date']);?> &ndash; </strong></span>
     <div class="prBody"><?php print render($content['body']);?></div>
     <?php print render($content['field_boiler_plate']);?>
