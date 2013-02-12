@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*Block Videos starting with Technology*/
+.view-display-id-block_4 {
+  position:relative;
+  bottom:30px;
+}
+
 #accellionLogo {
 	position:relative;
 	right:20px;
