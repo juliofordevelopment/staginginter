@@ -19,6 +19,9 @@
 ?>
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
+    <!-- Test -->
+	<p>&nbsp;</p>
+    <!-- Test -->
     <h2><?php print $title; ?></h2>
   <?php endif; ?>
   <?php if (!empty($header)) : ?>
@@ -65,7 +68,9 @@
     <?php endforeach; ?>
   </tbody>
 </table>
-
+    <!-- Test -->
+	<p>&nbsp;</p>
+    <!-- Test -->
 
 <style>
 
