@@ -11,3 +11,4 @@ sites/*
 sites/default/settings.php
 sites/default/files
 sites/all/modules/.DS_Store
+testSync_Manual.txt
