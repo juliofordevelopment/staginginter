@@ -30,8 +30,8 @@ $view = views_get_view('tab_views_whitepaper');
 print $view->preview('default');
 ?></span>
     </div>
-    <div class="grid-child grid-10"><a href="/company/awards-honors">
-<img src="/sites/default/files/events/Accellion-SCAwardDelux-2012.png" border="0"></a>
+    <div class="grid-child grid-10"><a href="/company/events">
+<img src="/sites/default/files/events/Accellion-Social-Bar-Banner-lg.png" border="0"></a>
     </div>
 </div>
 
