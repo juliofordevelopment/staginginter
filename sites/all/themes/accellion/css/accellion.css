@@ -1,6 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*Block Featured Resources Mobile Productiviy*/
+.featured-resources-mproductivity h3{
+  color:#3A536E;
+  font-size:12px;
+  margin:10px 0 0;
+}
+
+.featured-resources-mproductivity ul {
+  color:#000000;
+  font-size:11px;
+  list-style: disc outside none;
+  padding-left:15px;
+}
+
+.featured-resources-mproductivity a {
+  color:#000000;
+}
+
+.featured-resources-mproductivity a:hover, a:focus {
+  text-decoration:underline;;
+}
+
+
 /*Block Videos starting with Technology*/
 .view-display-id-block_4 {
   position:relative;
