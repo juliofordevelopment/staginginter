@@ -23,6 +23,15 @@
   text-decoration:underline;;
 }
 
+/*Block Resellers View*/
+#block-views-resellers-view-block-block {
+  position:relative;
+  bottom:20px;
+}
+
+#block-views-resellers-view-block-block tr td.col-first {
+ height:90px;
+}
 
 /*Block Videos starting with Technology*/
 .view-display-id-block_4 {
