@@ -1,6 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Block S2 */
+#block-views-resource-datasheet-block-4 {
+  position:relative;
+  bottom:30px;
+}
+
+.S2-item-list {
+  position:relative;
+  top:30px;
+}
+
 /*Block Featured Resources Mobile Productiviy*/
 .featured-resources-mproductivity h3{
   color:#3A536E;
