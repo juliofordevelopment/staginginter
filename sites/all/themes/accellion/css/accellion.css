@@ -1,6 +1,49 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Block S2 */
+#block-views-resource-datasheet-block-4 {
+  position:relative;
+  bottom:30px;
+}
+
+.S2-item-list {
+  position:relative;
+  top:30px;
+}
+
+/*Block Featured Resources Mobile Productiviy*/
+.featured-resources-mproductivity h3{
+  color:#3A536E;
+  font-size:12px;
+  margin:10px 0 0;
+}
+
+.featured-resources-mproductivity ul {
+  color:#000000;
+  font-size:11px;
+  list-style: disc outside none;
+  padding-left:15px;
+}
+
+.featured-resources-mproductivity a {
+  color:#000000;
+}
+
+.featured-resources-mproductivity a:hover, a:focus {
+  text-decoration:underline;;
+}
+
+/*Block Resellers View*/
+#block-views-resellers-view-block-block {
+  position:relative;
+  bottom:20px;
+}
+
+#block-views-resellers-view-block-block tr td.col-first {
+ height:90px;
+}
+
 /*Block Videos starting with Technology*/
 .view-display-id-block_4 {
   position:relative;
@@ -365,7 +408,8 @@ padding-right: 20px;
 
 .menu-block-wrapper a {
     text-align: left;
-padding-right: 15px;
+/*padding-right: 15px;*/
+padding-right: 7px;
 padding-bottom: 15px;
 padding-left: 7px;
 color: #666666;
@@ -375,7 +419,8 @@ text-decoration: none;
 
 .menu-block-wrapper a:hover {
     text-align: left;
-padding-right: 15px;
+/*padding-right: 15px;*/
+padding-right: 7px;
 padding-bottom: 15px;
 padding-left: 7px;
 color: #3a536e;
@@ -385,7 +430,8 @@ text-decoration: none;
 
 .menu-block-wrapper a.active {
     text-align: left;
-padding-right: 15px;
+/*padding-right: 15px;*/
+padding-right: 7px;
 padding-bottom: 15px;
 padding-left: 7px;
 color: #000000;

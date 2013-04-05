@@ -10,28 +10,28 @@
 
 <div class="grid-parent">
     <div class="grid-child grid-30">
-        <span class="grid-30-t">Recent <b>News</b></span>
+        <span class="grid-30-t"><b>Recent News</b></span>
         <br><span style="word-wrap: break-word;"><?php
 $view = views_get_view('press_release_view');
 print $view->preview('social_news_pr_block');
 ?></span>
     </div>
     <div class="grid-child grid-30">
-        <span class="grid-30-t">Customer <b>Case Studies</b></span>
+        <span class="grid-30-t"><b>Customer Case Studies</b></span>
         <br><span style="word-wrap: break-word;"><?php
 $view = views_get_view('tab_views_ccs');
 print $view->preview('block');
 ?></span>
     </div>
     <div class="grid-child grid-30">
-        <span class="grid-30-t">Industry <b>Whitepapers</b></span>
+        <span class="grid-30-t"><b>Industry Whitepapers</b></span>
         <br><span style="word-wrap: break-word;"><?php
 $view = views_get_view('tab_views_whitepaper');
 print $view->preview('default');
 ?></span>
     </div>
-    <div class="grid-child grid-10"><a href="/company/events">
-<img src="/sites/default/files/events/Accellion-Social-Bar-Banner-lg.png" border="0"></a>
+    <div class="grid-child grid-10"><a href="http://www.info.accellion.com/WP-Hi-GartnerMarketscope.html?ms=bottomad0213">
+<img src="/sites/default/files/events/Accellion-Social-Bar-Banner-Gartner.png" border="0"></a>
     </div>
 </div>
 
