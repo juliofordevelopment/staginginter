@@ -35,7 +35,7 @@
       <li><a href="/news">News</a></li>
       <li><a href="/company/events">Events</a></li>
       <li><a href="/company/investors">Investors</a></li>
-      <li><a href="/company/technology-partners">Technology Partners</a></li>
+      <li><a href="/company/partners">Partners</a></li>
       <li><a href="/company/management-team">Management Team</a></li>
       <li><a href="/company/advisory-board">Advisory Board</a></li>
       <li><a href="/company/careers">Careers</a></li>
