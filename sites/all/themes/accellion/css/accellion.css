@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /* Block S2 */
-#block-views-resource-datasheet-block-4 {
+/*#block-views-resource-datasheet-block-4 {
   position:relative;
   bottom:30px;
 }
@@ -10,7 +10,7 @@
 .S2-item-list {
   position:relative;
   top:30px;
-}
+}*/
 
 /*Block Featured Resources Mobile Productiviy*/
 .featured-resources-mproductivity h3{
@@ -45,10 +45,10 @@
 }
 
 /*Block Videos starting with Technology*/
-.view-display-id-block_4 {
+/*.view-display-id-block_4 {
   position:relative;
   bottom:30px;
-}
+}*/
 
 #accellionLogo {
 	position:relative;
