@@ -53,11 +53,12 @@ form .form-submit:hover{
 /**
  * Search form
  */
-form#search-block-form{
+
+/*form#search-block-form{
   float:right;
   overflow:hidden;
   margin:-40px 15px 10px 0px;
-}
+}*/
 
 form#search-block-form .form-text{
   border: medium none;
@@ -154,6 +155,8 @@ form#contact-form .form-submit:hover{
  */
 form#search-block-form{
   float:right;
+  position:relative;
+  right:220px;
   overflow:hidden;
   margin:-70px 5px 10px 0px;
 }
@@ -185,6 +188,7 @@ form#search-block-form .form-submit {
 #block-search-form {
 	z-index:499;
 }
+
 
 
 

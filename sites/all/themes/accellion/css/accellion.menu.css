@@ -27,7 +27,8 @@
 /* 	LEVEL ONE  */
 ul.dropdown       { 
   position: relative;  
-  z-index: 100;
+  /*z-index: 100;*/
+  z-index: 1000;
   /*height: 75px;*/
 }
 ul.dropdown li    { 
@@ -176,3 +177,4 @@ background: url('/sites/default/files/main-nav-ft-h.png') repeat-x 100% 100%;
   text-decoration: none;
   cursor: none;
 }
+
