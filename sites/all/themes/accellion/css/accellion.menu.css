@@ -167,6 +167,7 @@ ul.dropdown li.menu-no-hover:hover{background-image: none;}
   color: white;
   text-shadow: 1px 1px 1px #1B415C;
   background: url('/sites/all/themes/accellion/images/trial-button.png') no-repeat 100% 50%;
+}
 
 .menu-free-trial a{ 
   font-weight: bold; 
@@ -174,23 +175,47 @@ background: url('/sites/default/files/main-nav-ft-h.png') repeat-x 100% 100%;
 }
 
 
-/* French Button */
+/* Hover Effect Translated Trial Button */
 
-#menu-free-trialfr{ 
+
+#trial-fr a { 
   color: #1B415C; 
   font-weight: bold;
   background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
-
 }
-#menu-free-trialfr:hover{ 
+
+#trial-fr a:visited { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
+}
+
+#trial-fr a:hover{ 
   color: white;
   text-shadow: 1px 1px 1px #1B415C;
   background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
-
-.menu-free-trialfr a{ 
-  font-weight: bold;
-background: url('/sites/default/files/main-nav-ft-h.png') repeat-x 100% 100%;
 }
+
+
+#trial-de a { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+#trial-de a:visited { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+#trial-de a:hover{ 
+  color: white;
+  text-shadow: 1px 1px 1px #1B415C;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+
 
 
 

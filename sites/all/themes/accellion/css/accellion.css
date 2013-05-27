@@ -35,7 +35,8 @@ ul.worldwide {
 }
 
 .qtip.qtip-light.qtip-active {
-  top:30px !important;
+  /*top:30px !important;*/
+  top:27px !important;
 }
 
 .qtip.wrapper {
@@ -124,9 +125,6 @@ line-height: 19px;
 
 /* END: FOOTER ELEMENTS AFTER CONVERTED TO BLOCKS */
 /* ============================================== */
-
-
-
 
 
 
@@ -320,6 +318,22 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
     color: #FB1;
     text-decoration: none;
 }
+
+
+/* Translated Topnav Positioning */
+
+#top-links-fr {
+  	position:relative;
+	left:19px;
+}
+
+#top-links-de {
+  	position:relative;
+	left:11px;
+}
+
+
+
 
 #footer .block .content ul li a:hover{ text-decoration: none;}
 
