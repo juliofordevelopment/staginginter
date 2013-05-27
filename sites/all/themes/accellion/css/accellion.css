@@ -10,6 +10,15 @@ ul.worldwide {
   list-style-type:none;
 }
 
+ul.monde {
+  list-style-type:none;
+}
+
+ul.welweit {
+  list-style-type:none;
+}
+
+
 .worldwide a:link {
     color: #FFFFFF !important;
   font-size: 11px;	
